@@ -1,0 +1,12 @@
+		SetPos(34, 20);
+		cout << score << endl;
+	}
+}
+
+void Game::sharpDraw(int id, bool show)
+{
+	int x, y;
+
+	if (show == true)
+	{
+		if (id > 0)
