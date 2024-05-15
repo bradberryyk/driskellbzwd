@@ -1,0 +1,22 @@
+		if (kbhit())
+		{
+			key = getch();
+			switch (key)
+			{
+			case 72://上
+				p_MP->y -= 5;
+				break;
+			case 80://下
+				p_MP->y += 5;
+				break;
+			case 75://左
+				p_MP->x -= 5;
+				left -= 5;
+				break;
+			case 77://右
+				p_MP->x += 5;
+				left += 5;
+				break;
+			}
+		}
+ 
