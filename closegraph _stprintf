@@ -1,0 +1,10 @@
+			EndBatchDraw();
+			Sleep(3000);
+			closegraph();
+			return 0;
+		}
+ 
+		
+		TCHAR s_score[100];
+		_stprintf(s_score, _T("你的分数:%d"), kill);
+		outtextxy((WINDOW_WIDTH / 2 + WIDTH / 2) + 50, WINDOW_HEIGHT/2, s_score);
