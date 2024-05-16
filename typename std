@@ -1,0 +1,6 @@
+
+template< class F, class... Args, class = typename std::enable_if<!std::is_member_function_pointer<F>::value>::type>
+void Wrap(F && f, Args && ... args)
+{
+return f(std::forward<Args>(args)...); 
+}
